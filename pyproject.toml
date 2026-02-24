@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mvimport"
+version = "0.1.0"
+description = "HIKROBOT MV Camera Control Python SDK for Windows x64 – fully bundled, no MVS SDK install required"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "Apache-2.0" }
+
+[tool.setuptools.packages.find]
+include = ["mvimport*"]
+
+[tool.setuptools.package-data]
+mvimport = ["lib/*"]
